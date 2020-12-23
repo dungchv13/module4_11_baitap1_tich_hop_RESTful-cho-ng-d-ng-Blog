@@ -1,0 +1,16 @@
+model/service/CommentService.java
+ model.service.CommentService
+config/ApplicationInitializer.java
+ config.ApplicationInitializer
+model/entities/Response.java
+ model.entities.Response
+model/entities/Comment.java
+ model.entities.Comment
+model/repository/CommentRepository.java
+ model.repository.CommentRepository
+config/ApplicationConfig.java
+ config.ApplicationConfig
+model/service/CommentServiceImpl.java
+ model.service.CommentServiceImpl
+controllers/CommentController.java
+ controllers.CommentController

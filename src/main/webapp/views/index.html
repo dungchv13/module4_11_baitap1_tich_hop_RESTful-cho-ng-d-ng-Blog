@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>img_of_the_day</title>
+</head>
+<body>
+
+<div>
+    <img id="img-of-the-day">
+</div>
+
+
+
+</body>
+</html>
+<script>
+    let query = 'https://api.nasa.gov/planetary/apod?api_key=ZeTmGOVADgSL1OhLrgKX3Yqt6kORCYzFUsMNarCN;
+    let request = new XMLHttpRequest();
+    request.open('GET', query);
+    request.onload = function() {
+        if (request.status === 200) {
+            let response = JSON.parse(request.responseText);
+            document.getElementById('img-of-the-day').setAttribute('src', response.url);
+        }
+    };
+    request.send();
+</script>
